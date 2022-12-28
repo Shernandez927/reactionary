@@ -8,7 +8,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     <AnchorLink
       className={`${
         selectedPage === lowerCasePage ? "text-yellow" : ""
-      } hover: text-yellow transition duration-500`}
+      } hover:text-blue transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -29,7 +29,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 font-worksans text-sm font-semibold">
             <Link 
-            page ="About Me"
+            page ="Home"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
             />
@@ -49,7 +49,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             setSelectedPage={setSelectedPage}
             />
             <Link 
-            page ="Contact Me"
+            page ="Contact"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
             />
@@ -75,7 +75,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 {/* Menu Icons */}
                 <div className="flex flex-col gap-10 ml-[33%] text-2xl">
                     <Link 
-                    page ="About Me"
+                    page ="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                     />
@@ -95,7 +95,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                     setSelectedPage={setSelectedPage}
                     />
                     <Link 
-                    page ="Contact Me"
+                    page ="Contact"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                     />
