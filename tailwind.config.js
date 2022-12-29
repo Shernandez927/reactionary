@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         lavender: "#9f86c0",
+        "dusty-lavender": "#5e548e",
         "dusty-rose": "#be95c4",
         rose: "#e0b1cb",
         gray: "#ededed",

@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import DotGroup from "./components/DotGroup";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 import { useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 
@@ -19,6 +20,7 @@ function App() {
           />
         )}
         <Home />
+        <Footer />
       </div>
     </div>
   );

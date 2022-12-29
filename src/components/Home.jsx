@@ -36,14 +36,14 @@ const Home = ({setSelectedPage}) => {
                     visible: { opacity: 1, x: 0 }
                 }}
                 >
-                    <p className="text-6xl font-worksans z-10 text-center md:text-start">
+                    <p className="text-6xl font-playfair z-10 text-center md:text-start">
                         Shelby {""}
-                        <span className="xs:relative xs:text-white pxs:font-semibold z-20">
+                        <span className="xs:relative xs:text-white pxs:font-bold z-20">
                             Hernandez
                         </span>
                     </p>
                     <p className="mt-10 mb-7 text-sm text-center md:text-start">
-                        Hi, I'm Shelby. 👋 I'm from Austin, TX and I'm currently cultivating my skills in web and software development
+                        Hi, I'm Shelby. 👋   I'm from Austin, TX and I'm currently cultivating my skills in web and software development
                         through UT Austin's Coding BootCamp.
                     </p>
                 </motion.div>
@@ -72,12 +72,11 @@ const Home = ({setSelectedPage}) => {
                     onClick={() => setSelectedPage("contact")}
                     href="contact"
                     >
-                        <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex 
+                        <div className="bg-deep-blue hover:text-lavender transition duration-500 w-full h-full flex 
                         items-center justify-center font-worksans px-10">
                         Let's Talk.
                         </div>
                     </AnchorLink>
-
                 </motion.div>
 
             </div>
