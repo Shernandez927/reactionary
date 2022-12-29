@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import DotGroup from "./components/DotGroup";
+import Home from "./components/Home";
 import { useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 
@@ -17,6 +18,7 @@ function App() {
             setselectedPage={setselectedPage}
           />
         )}
+        <Home />
       </div>
     </div>
   );
