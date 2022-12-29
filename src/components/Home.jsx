@@ -45,7 +45,7 @@ const Home = ({setSelectedPage}) => {
                 Hernandez
               </span>
             </p>
-            <p className="mt-10 mb-7 text-sm text-center md:text-start">
+            <p className="mt-10 mb-7 text-lg text-center md:text-start">
               Hi, I'm Shelby. 👋 I'm from Austin, TX and I'm currently
               cultivating my skills in web and software development through UT
               Austin's Coding BootCamp.
@@ -64,7 +64,7 @@ const Home = ({setSelectedPage}) => {
             }}
           >
             <AnchorLink
-              className="bg-gradient-purple text-deep-blue rounded-sm py-3 px-7 font-semibold 
+              className="bg-gradient-purple text-deep-blue rounded-sm py-3 px-7 text-lg font-semibold 
                     hover:bg-blue hover:text-white transition duration-500"
               onClick={() => setSelectedPage("contact")}
               href="contact"
@@ -77,14 +77,14 @@ const Home = ({setSelectedPage}) => {
               href="contact"
             >
               <div
-                className="bg-deep-blue hover:text-lavender transition duration-500 w-full h-full flex 
+                className="bg-deep-blue hover:text-lavender text-lg transition duration-500 w-full h-full flex 
                         items-center justify-center font-worksans px-10"
               >
                 Let's Talk.
               </div>
             </AnchorLink>
           </motion.div>
-          {/* Social Media Icons */}
+          {/* Social Media Icon Links */}
           <motion.div
             className="flex mt-5 justify-center md:justify-start"
             initial="hidden"
@@ -98,7 +98,7 @@ const Home = ({setSelectedPage}) => {
           >
             <div className="flex justify-center md:justify-start my-2 mx-20 gap-7">
               <a
-                className="text-5xl hover:opacity-50 transition duration-500"
+                className="text-6xl hover:opacity-50 transition duration-500"
                 href="https://github.com/Shernandez927"
                 target="_blank"
                 rel="noreferrer"
@@ -106,7 +106,7 @@ const Home = ({setSelectedPage}) => {
                 <ion-icon name="logo-github"></ion-icon>
               </a>
               <a
-                className="text-5xl hover:opacity-50 transition duration-500"
+                className="text-6xl hover:opacity-50 transition duration-500"
                 href="https://www.linkedin.com/in/shelby-hernandez-801252220/"
                 target="_blank"
                 rel="noreferrer"

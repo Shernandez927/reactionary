@@ -22,7 +22,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
 
   return (
-    <nav className={`z-40 w-full fixed top-0 py-6`}>
+    <nav className={`z-40 w-full fixed top-0 py-6 bg-deep-blue opacity-80`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">SH</h4>
         {/* Desktop Navbar */}
@@ -67,7 +67,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 {/* Close Icon */}
                 <div className="flex justify-end p-5">
                     <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     </button>
