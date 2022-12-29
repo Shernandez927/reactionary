@@ -63,7 +63,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         )}
         {/* Mobile Navbar Menu */}
         {!isAboveSmallScreens && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+            <div className="text-3xl absolute right-8 top-6 cursor-pointer">
                 {/* Close Icon */}
                 <div className="flex justify-end p-5">
                     <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -73,7 +73,8 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                     </button>
                 </div>
                 {/* Menu Icons */}
-                <div className="flex flex-col gap-10 ml-[33%] text-2xl">
+                <div className="md:flex md:items-center">
+                  <li className="md:ml-8 text-xl md:my-0 my-7">
                     <Link 
                     page ="Home"
                     selectedPage={selectedPage}
@@ -99,6 +100,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                     />
+                    </li>
                 </div>
             </div>
         )}

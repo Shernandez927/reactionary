@@ -1,6 +1,10 @@
 import Navbar from "./components/Navbar";
 import DotGroup from "./components/DotGroup";
 import Home from "./components/Home";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -20,6 +24,10 @@ function App() {
           />
         )}
         <Home />
+        <Skills />
+        <Projects />
+        <Resume />
+        <Contact />
         <Footer />
       </div>
     </div>
