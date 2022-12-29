@@ -39,13 +39,13 @@ const Home = ({setSelectedPage}) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="text-6xl font-playfair z-10 text-center md:text-start">
+            <p className="text-6xl font-worksans font-semibold z-10 text-center md:text-start">
               Shelby {""}
               <span className="xs:relative xs:text-white pxs:font-bold z-20">
                 Hernandez
               </span>
             </p>
-            <p className="mt-10 mb-7 text-lg text-center md:text-start">
+            <p className="mt-10 mb-7 text-xl text-center md:text-start">
               Hi, I'm Shelby. 👋 I'm from Austin, TX and I'm currently
               cultivating my skills in web and software development through UT
               Austin's Coding BootCamp.
@@ -80,7 +80,7 @@ const Home = ({setSelectedPage}) => {
                 className="bg-deep-blue hover:text-lavender text-lg transition duration-500 w-full h-full flex 
                         items-center justify-center font-worksans px-10"
               >
-                Let's Talk.
+                Let's Chat.
               </div>
             </AnchorLink>
           </motion.div>

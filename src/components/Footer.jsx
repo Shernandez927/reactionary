@@ -3,7 +3,7 @@
 const Footer = () => {
  return (
     <footer className="justify-center text-center">
-        <p className="font-playfair text-xl">© 2022 Made with 
+        <p className="font-worksans text-xl">© 2022 Made with 
         <span className="text-red-500"> ❤ </span> by Shelby Hernandez</p>
     </footer>
  )
