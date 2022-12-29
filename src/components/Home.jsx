@@ -98,7 +98,7 @@ const Home = ({setSelectedPage}) => {
           >
             <div className="flex justify-center md:justify-start my-2 mx-20 gap-7">
               <a
-                className="text-6xl hover:opacity-50 transition duration-500"
+                className="text-6xl hover:opacity-50 hover:scale-110 transition duration-500"
                 href="https://github.com/Shernandez927"
                 target="_blank"
                 rel="noreferrer"
@@ -106,7 +106,7 @@ const Home = ({setSelectedPage}) => {
                 <ion-icon name="logo-github"></ion-icon>
               </a>
               <a
-                className="text-6xl hover:opacity-50 transition duration-500"
+                className="text-6xl hover:opacity-50 hover:scale-110 transition duration-500"
                 href="https://www.linkedin.com/in/shelby-hernandez-801252220/"
                 target="_blank"
                 rel="noreferrer"
