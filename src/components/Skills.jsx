@@ -26,14 +26,30 @@ return (
             Techincal <span className="text-rose">Skills</span>
           </p>
         <div className="w-full grid justify-items-center grid-cols-2 md:grid-cols-4 gap-8 text-center py-10 px-12 sm:px-0">
-            <img src={html} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
-            <img src={css} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
-            <img src={js} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
-            <img src={bulma} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
-            <img src={tailwind} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
-            <img src={node} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
-            <img src={sql} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
-            <img src={react} alt="html" className="hover:scale-110 ease-in-out duration-500"/>
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
+            <img src={html} alt="html5" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
+            <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
+            <img src={css} alt="css3" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+            <img src={js} alt="javascript" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
+            <a href="https://bulma.io/documentation/" target="_blank" rel="noreferrer">
+            <img src={bulma} alt="bulmacss" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
+            <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noreferrer">
+            <img src={tailwind} alt="tailwindcss" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
+            <a href="https://nodejs.org/en/docs/" target="_blank" rel="noreferrer">
+            <img src={node} alt="nodejs" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
+            <a href="https://dev.mysql.com/doc/" target="_blank" rel="noreferrer">
+            <img src={sql} alt="mysql" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
+            <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noreferrer">
+            <img src={react} alt="reactjs" className="hover:scale-110 ease-in-out duration-500"/>
+            </a>
 
         </div>
         </motion.div>
