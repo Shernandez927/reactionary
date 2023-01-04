@@ -33,7 +33,7 @@ const Contact = () => {
             <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/shelbyhernandez4851107@gmail.com"
+            action="https://formsubmit.co/e5982065df2fd16e660c4557f728e552"
             method="POST"
             >
             <input
@@ -46,7 +46,7 @@ const Contact = () => {
              })}
             />
             {errors.name && (
-                <p className="text-red mt-1">
+                <p className="text-red-500 mt-1">
                     {errors.name.type === "required" && "This field is required"}
                     {errors.name.type === "maxLength" && "Max length is 100 characters"}
                 </p>
@@ -61,7 +61,7 @@ const Contact = () => {
              })}
             />
             {errors.email && (
-                <p className="text-red mt-1">
+                <p className="text-red-500 mt-1">
                     {errors.email.type === "required" && "This field is required"}
                     {errors.email.type === "pattern" && "Invalid email address"}
                 </p>
@@ -78,7 +78,7 @@ const Contact = () => {
              })}
             />
             {errors.message && (
-                <p className="text-red mt-1">
+                <p className="text-red-500 mt-1">
                     {errors.message.type === "required" && "This field is required"}
                     {errors.message.type === "maxLength" && "Max length is 2000 characters"}
                 </p>
