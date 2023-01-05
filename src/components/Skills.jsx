@@ -8,6 +8,10 @@ import bulma from "../assets/images/bulma.png";
 import sql from "../assets/images/sql.png";
 import tailwind from "../assets/images/tailwind.png";
 import react from "../assets/images/react.png";
+import git from "../assets/images/git.png";
+import sequelize from "../assets/images/sequelize.png";
+import vscode from "../assets/images/vscode.png";
+import graphql from "../assets/images/graphql.png"
 
 const Skills = () => {
   return (
@@ -107,6 +111,50 @@ const Skills = () => {
             <img
               src={react}
               alt="reactjs"
+              className="hover:scale-110 ease-in-out duration-500"
+            />
+          </a>
+          <a
+          href="https://git-scm.com/doc"
+          target="_blank"
+          rel="noreferrer"
+          >
+            <img
+              src={git}
+              alt="git"
+              className="hover:scale-110 ease-in-out duration-500"
+            />
+          </a>
+          <a
+          href="https://sequelize.org/docs/v6/"
+          target="_blank"
+          rel="noreferrer"
+          >
+            <img
+              src={sequelize}
+              alt="sequelize"
+              className="hover:scale-110 ease-in-out duration-500"
+            />
+          </a>
+          <a
+          href="https://code.visualstudio.com/docs"
+          target="_blank"
+          rel="noreferrer"
+          >
+            <img
+              src={vscode}
+              alt="vscode"
+              className="hover:scale-110 ease-in-out duration-500"
+            />
+          </a>
+          <a
+          href="https://graphql.org/learn/"
+          target="_blank"
+          rel="noreferrer"
+          >
+            <img
+              src={graphql}
+              alt="graphql"
               className="hover:scale-110 ease-in-out duration-500"
             />
           </a>

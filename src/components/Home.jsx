@@ -39,12 +39,12 @@ const Home = ({setSelectedPage}) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className="text-6xl font-worksans font-semibold z-10 text-center md:text-start">
+            <h1 className="text-6xl font-worksans font-semibold z-10 text-center md:text-start">
               Shelby {""}
               <span className="xs:relative xs:text-white pxs:font-bold z-20">
                 Hernandez
               </span>
-            </p>
+            </h1>
             <p className="mt-10 mb-7 text-xl text-center md:text-start">
               Hi, I'm Shelby. 👋 I'm from Austin, TX and I'm currently
               cultivating my skills in web and software development through UT

@@ -1,21 +1,22 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
+import { NavLink } from "react-router-dom";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
-  const lowerCasePage = page.toLowerCase();
-  return (
-    <AnchorLink
-      className={`${
-        selectedPage === lowerCasePage ? "text-lavender" : ""
-      } hover:text-lavender transition duration-500`}
-      href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
-    >
-      {page}
-    </AnchorLink>
-  );
-};
+// const Link = ({ page, selectedPage, setSelectedPage }) => {
+//   const lowerCasePage = page.toLowerCase();
+//   return (
+//     <AnchorLink
+//       className={`${
+//         selectedPage === lowerCasePage ? "text-lavender" : ""
+//       } hover:text-lavender transition duration-500`}
+//       href={`#${lowerCasePage}`}
+//       onClick={() => setSelectedPage(lowerCasePage)}
+//     >
+//       {page}
+//     </AnchorLink>
+//   );
+// };
 
 const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
@@ -28,31 +29,34 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         {/* Desktop Navbar */}
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 font-worksans text-lg font-semibold">
-            <Link 
-            page ="Home"
+            <NavLink
+            to ="/"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
-            />
-            <Link 
-            page ="Skills"
+            >
+              Home
+            </NavLink>
+            <NavLink 
+            to="projects"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
-            />
-            <Link 
-            page ="Projects"
+            >
+              Projects
+            </NavLink>
+            <NavLink 
+            to ="resume"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
-            />
-            <Link 
-            page ="Resume"
+            >
+              Resume
+            </NavLink>
+            <NavLink
+            to ="Contact"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
-            />
-            <Link 
-            page ="Contact"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            />
+            >
+              Contact
+            </NavLink>
           </div>
         ) : (
           <button className="text-4xl" onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -71,31 +75,40 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 {/* Menu Icons */}
                 <div className="md:flex md:items-center">
                   <li className="md:ml-8 text-xl md:my-0 my-7">
-                    <Link 
-                    page ="Home"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    />
-                    <Link 
-                    page ="Skills"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    />
-                    <Link 
-                    page ="Projects"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    />
-                    <Link 
-                    page ="Resume"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    />
-                    <Link 
-                    page ="Contact"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    />
+                  <NavLink
+            to ="/"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            >
+            </NavLink>
+            <NavLink 
+            to ="/"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            >
+            Skills
+            </NavLink>
+            <NavLink 
+            to="projects"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            >
+              Projects
+            </NavLink>
+            <NavLink 
+            to ="resume"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            >
+              Resume
+            </NavLink>
+            <NavLink
+            to ="Contact"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+            >
+              Contact
+            </NavLink>
                     </li>
                 </div>
             </div>
