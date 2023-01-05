@@ -1,118 +1,45 @@
 import { useState } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { NavLink } from "react-router-dom";
 
-// const Link = ({ page, selectedPage, setSelectedPage }) => {
-//   const lowerCasePage = page.toLowerCase();
-//   return (
-//     <AnchorLink
-//       className={`${
-//         selectedPage === lowerCasePage ? "text-lavender" : ""
-//       } hover:text-lavender transition duration-500`}
-//       href={`#${lowerCasePage}`}
-//       onClick={() => setSelectedPage(lowerCasePage)}
-//     >
-//       {page}
-//     </AnchorLink>
-//   );
-// };
-
 const Navbar = ({ selectedPage, setSelectedPage }) => {
+  let Links = [
+    { name: "Home", link: "/" },
+    { name: "Projects", link: "/projects" },
+    { name: "Resume", link: "/resume" },
+    { name: "Contact", link: "contact" },
+  ];
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
 
   return (
-    <nav className={`z-40 w-full fixed top-0 py-6 bg-deep-blue`}>
-      <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">SH</h4>
-        {/* Desktop Navbar */}
-        {isAboveSmallScreens ? (
-          <div className="flex justify-between gap-16 font-worksans text-lg font-semibold">
-            <NavLink
-            to ="/"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
+
+    <nav className="z-40 w-full fixed top-0 left-0 bg-deep-blue">
+      <div className="md:flex items-center justify-between bg-deep-blue py-4 md:px-10 px-7 ">
+        <div className="font-playfair text-5xl mr-1 pt-2 font-bold">
+          <h2>SH</h2>
+        </div>
+        <div
+          onClick={() => setIsMenuToggled(!isMenuToggled)}
+          className="text-4xl absolute right-8 top-6 cursor-pointer md:hidden"
+        >
+          <ion-icon name={isMenuToggled ? "close" : "menu"}></ion-icon>
+        </div>
+        <ul
+          className={`md:flex md:items-center gap-16 md:pb-0 
+          pb-6 absolute md:static bg-deep-blue md:z-auto z-[-1] 
+          left-0 w-full md:w-auto pl-9 transition-all 
+          duration-500 ease-in ${isMenuToggled ? "top-20" : "top-[-500px]"}`}
+        >
+          {Links.map((link) => (
+            <li
+              key={link.name}
+              className="md:ml-10 font-worksans font-semibold text-xl md:my-0 my-7 
+              hover:text-lavender transition duration-500"
             >
-              Home
-            </NavLink>
-            <NavLink 
-            to="projects"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-              Projects
-            </NavLink>
-            <NavLink 
-            to ="resume"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-              Resume
-            </NavLink>
-            <NavLink
-            to ="Contact"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-              Contact
-            </NavLink>
-          </div>
-        ) : (
-          <button className="text-4xl" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-            <ion-icon name="menu"></ion-icon>
-          </button>
-        )}
-        {/* Mobile Navbar Menu */}
-        {!isAboveSmallScreens && isMenuToggled && (
-            <div className="text-3xl absolute right-8 top-6 cursor-pointer">
-                {/* Close Icon */}
-                <div className="flex justify-end p-5">
-                    <button className="text-4xl" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                    <ion-icon name="close"></ion-icon>
-                    </button>
-                </div>
-                {/* Menu Icons */}
-                <div className="md:flex md:items-center">
-                  <li className="md:ml-8 text-xl md:my-0 my-7">
-                  <NavLink
-            to ="/"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-            </NavLink>
-            <NavLink 
-            to ="/"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-            Skills
-            </NavLink>
-            <NavLink 
-            to="projects"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-              Projects
-            </NavLink>
-            <NavLink 
-            to ="resume"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-              Resume
-            </NavLink>
-            <NavLink
-            to ="Contact"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-            >
-              Contact
-            </NavLink>
-                    </li>
-                </div>
-            </div>
-        )}
+              <NavLink to={link.link}>{link.name}</NavLink>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
