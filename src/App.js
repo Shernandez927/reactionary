@@ -20,7 +20,7 @@ function App() {
     <Router>
       <div className="app bg-deep-blue">
         <Navbar selectedPage={selectedPage} setselectedPage={setselectedPage} />
-        <div className="w-5/6 mx-auto md:h-full">
+        <div className="w-3/4 mx-auto md:h-full">
           <Routes>
             <Route path="/" element={[<Home />, <Skills />]} />
             <Route path="/projects" element={<Projects />} />

@@ -18,7 +18,7 @@ const Resume = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-       <div className="w-full justify-items-center gap-8 text-center">
+       <div className="justify-items-center gap-8 text-center">
         {/* Resume IMG Preview */}
         <img
         className="h-1/2 p-4 md:ml-24 justify-items-center"
