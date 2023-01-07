@@ -21,7 +21,7 @@ const Resume = () => {
        <div className="justify-items-center gap-8 text-center">
         {/* Resume IMG Preview */}
         <img
-        className="h-1/2 p-4 md:ml-24 justify-items-center"
+        className="h-1/2 p-4 justify-items-center"
         src={pdf} 
         alt="resume">
         </img>
