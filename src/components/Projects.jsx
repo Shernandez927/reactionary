@@ -11,7 +11,7 @@ const Projects = () => {
         Projects
       </h2>
       <motion.div
-        className="md:w-2/5 mx-auto text-center"
+        className="mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -21,7 +21,7 @@ const Projects = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <div className="w-full grid justify-items-center grid-cols-2 md:grid-cols-3 gap-8 text-center py-10 px-12 sm:px-0">
+        <div className="w-full flex-auto grid justify-items-center grid-cols-2 md:grid-cols-3 gap-8 text-center py-10 px-12 sm:px-0">
 
         <img src={eventeasyscreenshot} alt="project1"/>
 

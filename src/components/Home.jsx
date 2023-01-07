@@ -1,6 +1,6 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import stackOverFlow from "../assets/images/stackoverflow.png"
 
 const Home = () => {
 
@@ -52,7 +52,7 @@ const Home = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="flex justify-center md:justify-start my-2 mx-10 gap-7">
+          <div className="flex justify-center md:justify-start my-2 gap-7">
             <a
               className="text-6xl hover:opacity-50 hover:scale-110 transition duration-500"
               href="https://github.com/Shernandez927"
@@ -74,6 +74,17 @@ const Home = () => {
             >
               <ion-icon name="send"></ion-icon>
             </Link>
+            <a
+            className="hover:opacity-50 hover:scale-110 transition duration-500"
+            href="https://stackoverflow.com/users/19430732/shernand927"
+            target="_blank"
+            rel="noreferrer"
+            >
+              <img
+              src={stackOverFlow}
+              alt="stackoverflow"
+              />
+            </a>
           </div>
         </motion.div>
       </div>
