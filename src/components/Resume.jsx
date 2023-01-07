@@ -4,7 +4,7 @@ import pdf from "../assets/documents/resume.png";
 const Resume = () => {
 
   return (
-    <section id="resume" className="mt-32 pb-10">
+    <section id="resume" className="mt-20 pb-10">
       <h2 className="font-worksans text-center text-rose font-semibold text-4xl p-4">
         Resume
       </h2>
