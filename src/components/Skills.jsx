@@ -27,9 +27,9 @@ const Skills = () => {
         }}
       >
         <p className="font-worksans text-center font-semibold text-4xl mb-5">
-          Techincal <span className="text-rose">Skills</span>
+          Technical <span className="text-rose">Skills</span>
         </p>
-        <div className="w-full grid justify-items-center grid-cols-2 md:grid-cols-4 gap-8 text-center py-10 px-12 sm:px-0">
+        <div className="w-full grid justify-items-center grid-cols-3 md:grid-cols-4 gap-8 text-center py-10 px-12 sm:px-0">
           <a
             href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
             target="_blank"

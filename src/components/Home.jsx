@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="xs:mx-auto max-w-7xl md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="xs:mx-auto md:flex md:justify-between md:items-center md:h-full gap-16 py-10 mt-6"
     >
       {/* Image Section */}
       <div className="basis-2/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
@@ -31,10 +31,7 @@ const Home = () => {
           }}
         >
           <h1 className="text-6xl font-worksans font-semibold z-10 text-center md:text-start">
-            Shelby {""}
-            <span className="xs:relative xs:text-white pxs:font-bold z-20">
-              Hernandez
-            </span>
+            Shelby Hernandez
           </h1>
           <p className="mt-10 mb-7 text-xl text-center md:text-start">
             Hi, I'm Shelby. 👋 I'm from Austin, TX and I'm currently cultivating

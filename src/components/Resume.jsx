@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import pdf from "../assets/documents/resume.png";
+import resumeDoc from "../assets/documents/ResumeDoc.pdf"
 
 const Resume = () => {
+
 
   return (
     <section id="resume" className="mt-20 pb-10">
@@ -27,7 +29,7 @@ const Resume = () => {
         </img>
 
         {/* Download Resume Button */}
-            <a href={pdf} rel="noreferrer" target="_blank">
+            <a href={resumeDoc} rel="noreferrer" target="_blank">
             <button className="rounded-sm bg-gradient-purple mt-4 py-3 px-7 text-lg font-semibold text-deep-blue hover:text-white transition duration-500">
                 Download CV
                 <ion-icon name="download"></ion-icon>
