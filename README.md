@@ -18,7 +18,7 @@
 If cloned locally run the following command in the root directory before initializing:
 
 ```
-    npm
+    npm install
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ If cloned locally use the following terminal command to initialize application:
 
 Live on [Heroku](https://reactionary.herokuapp.com)
 
-    ![reactionary](./public/assets/images/portfolioscreenshot.png)
+![reactionary](./src/assets/images/screenshot.png)
 
 ## License
 
