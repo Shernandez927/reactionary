@@ -2,12 +2,9 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+- This project contains a portfolio built using React, React-Router, TailwindCSS, and Framer Motion
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- This portfolio serves to convey a culmination of the knowledge and skills learned through my bootcamp course with a polished UI, collection of projects, and means of contacting me.
 
 ## Table of Contents
 
@@ -32,9 +29,9 @@ If cloned locally use the following terminal command to initialize application:
     npm run start
 ```
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Live on [Heroku](https://git.heroku.com/reactionary.git)
 
-    ![screenshot](/public/assets/images/portfolioscreenshot.png)
+    ![screenshot](./public/assets/images/portfolioscreenshot.png)
 
 ## License
 

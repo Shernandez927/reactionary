@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import profile from "../assets/images/Profile.JPG"
+import profile from "../assets/images/Profile.JPG";
 
 const Home = () => {
 
