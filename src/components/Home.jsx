@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import profile from "../assets/images/Profile.JPG"
 
 const Home = () => {
 
@@ -13,7 +14,7 @@ const Home = () => {
           <img
             alt="profile"
             className="w-full max-w-[350px] md:max-w-[600px]"
-            src="./assets/images/profile.jpg"
+            src={profile}
           />
       </div>
       {/* Main Section */}

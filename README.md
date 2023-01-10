@@ -18,17 +18,23 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+If cloned locally run the following command in the root directory before initializing:
+
+```
+    npm
+```
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+If cloned locally use the following terminal command to initialize application:
+
+```
+    npm run start
+```
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+    ![screenshot](/public/assets/images/portfolioscreenshot.png)
 
 ## License
 
