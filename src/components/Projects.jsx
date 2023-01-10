@@ -66,7 +66,7 @@ const Projects = () => {
           {ProjectInfo.map((project) => (
             <div className="relative" key={project.name}>
             <img src={project.image} alt="project" />
-            <div className="overlay absolute flex flex-col align-middle justify-center top-0 left-0 w-full h-full bg-overlay-black opacity-0 hover:opacity-100 ease-in-out duration-300 text-white-500">
+            <div className="object-contain absolute flex flex-col align-middle justify-center top-0 left-0 w-full h-full bg-overlay-black opacity-0 hover:opacity-100 ease-in-out duration-300 text-white-500">
               <a
                 href={project.link}
                 className="text-2xl font-bold hover:scale-110 transition duration-500"

@@ -912,9 +912,4 @@ body,
     content: var(--tw-content);
     max-width: 600px;
   }
-
-  .overlay {
-    height: 300px;
-    width: 450px;
-  }
 }
