@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import stackOverFlow from "../assets/images/stackoverflow.png"
 
 const Home = () => {
 
@@ -59,7 +58,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <ion-icon name="logo-github"></ion-icon>
+              <i class="fa-brands fa-github"></i>
             </a>
             <a
               className="text-6xl hover:opacity-50 hover:scale-110 transition duration-500"
@@ -67,23 +66,20 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <i class="fa-brands fa-linkedin"></i>
             </a>
             <Link className="text-6xl hover:opacity-50 hover:scale-110 transition duration-500"
             to="contact"
             >
-              <ion-icon name="send"></ion-icon>
+              <i class="fa-solid fa-paper-plane"></i>
             </Link>
             <a
-            className="hover:opacity-50 hover:scale-110 transition duration-500"
+            className="text-6xl hover:opacity-50 hover:scale-110 transition duration-500"
             href="https://stackoverflow.com/users/19430732/shernand927"
             target="_blank"
             rel="noreferrer"
             >
-              <img
-              src={stackOverFlow}
-              alt="stackoverflow"
-              />
+             <i class="fa-brands fa-stack-overflow"></i>
             </a>
           </div>
         </motion.div>

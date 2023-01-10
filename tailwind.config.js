@@ -12,7 +12,7 @@ module.exports = {
         gray: "#ededed",
         "deep-blue": "#010026",
         "dark-gray": "#757575",
-        "opaque-black": "rgba(0,0,0,0.35)",
+        "overlay-black": "rgba(0,0,0,0.50)",
       },
       backgroundImage: (theme) => ({
         "gradient-purple":

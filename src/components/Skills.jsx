@@ -15,7 +15,7 @@ import graphql from "../assets/images/graphql.png"
 
 const Skills = () => {
   return (
-    <section id="skills" className="pt-10 pb-10">
+    <section id="skills" className="md:mt-10 pt-10 pb-10">
       <motion.div
         initial="hidden"
         whileInView="visible"
