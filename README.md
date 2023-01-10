@@ -29,9 +29,9 @@ If cloned locally use the following terminal command to initialize application:
     npm run start
 ```
 
-Live on [Heroku](https://git.heroku.com/reactionary.git)
+Live on [Heroku](https://reactionary.herokuapp.com)
 
-    ![screenshot](./public/assets/images/portfolioscreenshot.png)
+    ![reactionary](./public/assets/images/portfolioscreenshot.png)
 
 ## License
 
