@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   let Links = [
@@ -15,7 +15,9 @@ const Navbar = () => {
     <nav className="z-40 w-full fixed top-0 left-0 right-0 bg-deep-blue">
       <div className="md:flex items-center justify-between bg-deep-blue py-4 md:px-10 px-7 ">
         <div className="font-playfair text-5xl mr-1 mt-2 font-bold">
+          <Link to="home">
           <h2>SH</h2>
+          </Link>
         </div>
         <div
           onClick={() => setIsMenuToggled(!isMenuToggled)}
