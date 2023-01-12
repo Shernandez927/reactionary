@@ -35,7 +35,10 @@ const Navbar = () => {
               className="md:ml-10 font-worksans font-semibold text-xl md:my-0 my-7 
               hover:text-lavender transition duration-500"
             >
-              <NavLink to={link.link}>{link.name}
+              <NavLink
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+              to={link.link}>
+                {link.name}
               </NavLink>
             </li>
           ))}
