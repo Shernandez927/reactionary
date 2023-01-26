@@ -15,7 +15,7 @@ import graphql from "../assets/images/graphql.png"
 
 const Skills = () => {
   return (
-    <section id="skills" className="md:mt-10 pt-10 pb-10">
+    <section id="skills" className=" pt-5 pb-10">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -29,7 +29,7 @@ const Skills = () => {
         <p className="font-worksans text-center font-semibold text-4xl mb-5">
           Technical <span className="text-rose">Skills</span>
         </p>
-        <div className="w-full grid justify-items-center grid-cols-3 md:grid-cols-4 gap-8 text-center py-10 px-12 sm:px-0">
+        <div className="w-full grid justify-items-center grid-cols-2 md:grid-cols-4 gap-8 text-center py-5 px-12 xs:px-0">
           <a
             href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
             target="_blank"

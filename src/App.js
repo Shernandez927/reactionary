@@ -5,7 +5,6 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -14,12 +13,10 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [selectedPage, setselectedPage] = useState("home");
-
   return (
     <Router>
       <div className="app bg-deep-blue">
-        <Navbar selectedPage={selectedPage} setselectedPage={setselectedPage} />
+        <Navbar />
         <div className="w-3/4 mx-auto md:h-full">
           <Routes>
             <Route path="/" element={[<Home />, <Skills />]} />

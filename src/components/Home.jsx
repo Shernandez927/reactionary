@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="xs:mx-auto md:flex md:justify-between md:items-center md:h-full gap-16 py-10 mt-6"
+      className="xs:mx-auto md:flex md:justify-between md:items-center md:h-full gap-16 py-5 mt-6"
     >
       {/* Image Section */}
       <div className="basis-2/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
@@ -19,7 +19,6 @@ const Home = () => {
       </div>
       {/* Main Section */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
-        {/* Headings */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -30,10 +29,10 @@ const Home = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <h1 className="text-6xl font-worksans font-semibold z-10 text-center md:text-start">
+          <h1 className="text-6xl font-worksans font-semibold z-10 text-center">
             Shelby Hernandez
           </h1>
-          <p className="mt-10 mb-7 text-xl text-center md:text-start">
+          <p className="mt-10 mb-7 text-xl text-center">
             Hi, I'm Shelby. 👋 I'm from Austin, TX and I'm currently cultivating
             my skills in web and software development through UT Austin's Coding
             BootCamp.
@@ -42,7 +41,7 @@ const Home = () => {
        
         {/* Social Media Icon Links */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -52,7 +51,7 @@ const Home = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="flex justify-center md:justify-start my-2 gap-7">
+          <div className="flex justify-center my-2 gap-7">
             <a
               className="text-6xl hover:opacity-50 hover:scale-110 transition duration-500"
               href="https://github.com/Shernandez927"

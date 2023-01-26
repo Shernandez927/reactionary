@@ -57,6 +57,7 @@ const Contact = () => {
             placeholder="Email"
              {...register("email", {
                 required: true,
+                // eslint-disable-next-line
                 pattern: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
              })}
             />

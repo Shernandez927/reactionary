@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import eventeasyscreenshot from "../assets/images/event-easy.png";
 import gypsy from "../assets/images/gypsy.jpg";
-import fanpage from "../assets/images/fanpage.jpg";
+import deadCoder from "../assets/images/deadCoder.png";
 import rainMan from "../assets/images/rain-man.png";
 import quintessential from "../assets/images/quintessential.png";
 import emendation from "../assets/images/emendation.png";
@@ -21,14 +21,14 @@ const Projects = () => {
       link: "https://pure-peak-95833.herokuapp.com/",
       repo: "https://github.com/Shernandez927/Projection"
     },
-    { name: "Fan Page",
-      description: "First WebPage",
-      image: fanpage,
-      link: "https://shernandez927.github.io/big-fan/",
-      repo: "https://github.com/Shernandez927/big-fan"
+    { name: "deadCoder",
+      description: "Vintage Game Application",
+      image: deadCoder,
+      link: "https://deadcoder.herokuapp.com/",
+      repo: "https://github.com/Shernandez927/deadCoder_"
     },
     { name: "Rain-Man",
-      description: "Weather Dashboard powered by OpenWeather API",
+      description: "OpenWeather API Weather Dashboard",
       image: rainMan,
       link: "https://shernandez927.github.io/rain-man/",
       repo: "https://github.com/Shernandez927/rain-man"
@@ -51,44 +51,47 @@ const Projects = () => {
       <h2 className="font-worksans text-center text-rose font-semibold text-4xl mt-24 mb-5">
         Projects
       </h2>
-      <motion.div
-        className="mx-auto text-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, y: -50 },
-          visible: { opacity: 1, y: 0 },
-        }}
-      >
-        <div className="w-full flex-auto grid justify-items-center grid-cols-2 md:grid-cols-3 gap-8 text-center py-10 px-12 sm:px-0">
+        <div className="w-full flex-auto grid justify-items-center grid-cols-1 md:grid-cols-3 gap-8 text-center py-10 px-12 sm:px-0">
           {ProjectInfo.map((project) => (
-            <div className="relative" key={project.name}>
-            <img src={project.image} alt="project" />
-            <div className="object-contain absolute flex flex-col align-middle justify-center top-0 left-0 w-full h-full bg-overlay-black opacity-0 hover:opacity-100 ease-in-out duration-300 text-white-500">
-              <a
-                href={project.link}
-                className="text-2xl font-bold hover:scale-110 transition duration-500"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {project.name}
-              </a>
+                  <motion.div
+                  className="mx-auto text-center"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, y: -50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
+            <div className="relative rounded-lg border-solid border-4 border-lavender" key={project.name}>
+            <img className="rounded-t" src={project.image} alt={project.name} />
+            <div className="p-6">
+                <h5 className="text-xl font-medium">{project.name}</h5>
               <p>{project.description}</p>
+              <div className="justify-items-center px-2 mt-3">
               <a
                href={project.repo}
-               className="text-2xl font-bold hover:scale-110 transition duration-500"
+               className=" text-4xl hover:text-gray transition duration-500"
                target="_blank"
                rel="noreferrer"
               >
-              Repository <i className="fa-brands fa-square-github"></i>
+              <i className="fa-brands fa-square-github px-2"></i>
               </a>
+              <a
+               href={project.link}
+               className="text-4xl hover:text-gray transition duration-500"
+               target="_blank"
+               rel="noreferrer"
+              >
+              <i class="fa-solid fa-rocket px-2"></i>
+              </a>
+              </div>
             </div>
           </div>
+          </motion.div>
           ))}
         </div>
-      </motion.div>
     </section>
   );
 };

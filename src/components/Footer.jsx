@@ -13,7 +13,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
       <a
         className="hover:opacity-50 hover:scale-110 transition duration-500 p-2"
@@ -21,7 +21,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-linkedin"></i>
       </a>
       <a
         className="hover:opacity-50 hover:scale-110 transition duration-500 p-2"
@@ -29,7 +29,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-stack-overflow"></i>
+        <i className="fa-brands fa-stack-overflow"></i>
       </a>
       </div>
     </footer>
