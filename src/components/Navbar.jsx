@@ -21,9 +21,9 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => setIsMenuToggled(!isMenuToggled)}
-          className="absolute right-8 top-6 cursor-pointer md:hidden"
+          className="absolute right-8 top-6 cursor-pointer md:hidden text-4xl"
         >
-          <ion-icon className={isMenuToggled ? "close" : "menu"}></ion-icon>
+          <i className={isMenuToggled ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
         </div>
         <ul
           className={`md:flex md:items-center gap-16 md:pb-0 
