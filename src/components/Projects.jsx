@@ -18,13 +18,13 @@ const Projects = () => {
     { name: "Gypsy",
       description: "Online PushPin Map",
       image: gypsy,
-      link: "https://pure-peak-95833.herokuapp.com/",
+      link: "https://project-gypsy-63a683d8f4f7.herokuapp.com",
       repo: "https://github.com/Shernandez927/Projection"
     },
     { name: "deadCoder",
       description: "Vintage Game Application",
       image: deadCoder,
-      link: "https://deadcoder.herokuapp.com/",
+      link: "https://deadcoder-db1047388a9e.herokuapp.com ",
       repo: "https://github.com/Shernandez927/deadCoder_"
     },
     { name: "Rain-Man",
