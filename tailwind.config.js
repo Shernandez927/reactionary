@@ -13,6 +13,12 @@ module.exports = {
         "deep-blue": "#010026",
         "dark-gray": "#757575",
         "overlay-black": "rgba(0,0,0,0.50)",
+        eggplant: "#3f2f49",
+        "antique-violet": "#583948",
+        "dark-cranberry": "#ab2955",
+        mauve: "#a9576e",
+        salmon: "#d78d8c",
+        "autumn-gold": "#f9c579",
       },
       backgroundImage: (theme) => ({
         "gradient-purple":
