@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
 
     <nav className="z-40 w-full fixed top-0 left-0 right-0 bg-deep-blue">
-      <div className="md:flex items-center justify-between bg-deep-blue py-4 md:px-10 px-7 ">
-        <div className="font-playfair text-5xl mr-1 mt-2 font-bold">
+      <div className="md:flex items-center justify-between bg-deep-blue py-2 md:px-10 px-7 ">
+        <div className="font-playfair text-5xl font-bold">
           <Link to="home">
           <h2>SH</h2>
           </Link>
@@ -26,15 +26,15 @@ const Navbar = () => {
           <i className={isMenuToggled ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
         </div>
         <ul
-          className={`md:flex md:items-center gap-16 md:pb-0 
+          className={`md:flex md:items-center gap-14
            absolute md:static bg-deep-blue md:z-auto z-[-1] 
           left-0 w-full md:w-auto pl-9 transition-all 
-          duration-500 ease-in ${isMenuToggled ? "top-20" : "top-[-500px]"}`}
+          duration-500 ease-in ${isMenuToggled ? "top-16" : "top-[-400px]"}`}
         >
           {Links.map((link) => (
             <li
               key={link.name} 
-              className="md:ml-10 font-worksans font-semibold text-xl md:my-0 my-7 
+              className="md:ml-10 font-worksans font-semibold text-xl md:my-0 my-5
               hover:text-lavender transition duration-500"
             >
               <NavLink
