@@ -1,5 +1,9 @@
+/* Work Sans Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Work+Sans:wght@300;600&display=swap");
-
+/* Rubik Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+/* Sedgwick Ave Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
@@ -680,7 +684,7 @@ video {
   border-radius: 9999px;
 }
 
-.bg-deep-blue {
+.bg-eggplant {
   --tw-bg-opacity: 1;
   background-color: rgb(1 0 38 / var(--tw-bg-opacity));
 }
@@ -827,7 +831,7 @@ body,
     font-weight: 600;
   }
 
-  .xs\:text-deep-blue {
+  .xs\:text-eggplant {
     --tw-text-opacity: 1;
     color: rgb(1 0 38 / var(--tw-text-opacity));
   }

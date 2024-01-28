@@ -15,7 +15,7 @@ import graphql from "../assets/images/graphql.png"
 
 const Skills = () => {
   return (
-    <section id="skills" className=" pt-5 pb-10">
+    <section id="skills" className="pt-5 pb-10 justify-items-center text-center">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -26,9 +26,10 @@ const Skills = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-worksans text-center font-semibold text-4xl mb-5">
-          Technical <span className="text-rose">Skills</span>
-        </p>
+        <div className="inline-flex font-semibold text-4xl mb-5">
+          <p className="-mr-40 text-mauve">Technical Skills</p>
+          <p className="-ml-36 text-salmon">Technical Skills</p>
+        </div>
         <div className="w-full grid justify-items-center grid-cols-2 md:grid-cols-4 gap-8 text-center py-5 px-12 xs:px-0">
           <a
             href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
@@ -114,11 +115,7 @@ const Skills = () => {
               className="hover:scale-110 ease-in-out duration-500"
             />
           </a>
-          <a
-          href="https://git-scm.com/doc"
-          target="_blank"
-          rel="noreferrer"
-          >
+          <a href="https://git-scm.com/doc" target="_blank" rel="noreferrer">
             <img
               src={git}
               alt="git"
@@ -126,9 +123,9 @@ const Skills = () => {
             />
           </a>
           <a
-          href="https://sequelize.org/docs/v6/"
-          target="_blank"
-          rel="noreferrer"
+            href="https://sequelize.org/docs/v6/"
+            target="_blank"
+            rel="noreferrer"
           >
             <img
               src={sequelize}
@@ -137,9 +134,9 @@ const Skills = () => {
             />
           </a>
           <a
-          href="https://code.visualstudio.com/docs"
-          target="_blank"
-          rel="noreferrer"
+            href="https://code.visualstudio.com/docs"
+            target="_blank"
+            rel="noreferrer"
           >
             <img
               src={vscode}
@@ -147,11 +144,7 @@ const Skills = () => {
               className="hover:scale-110 ease-in-out duration-500"
             />
           </a>
-          <a
-          href="https://graphql.org/learn/"
-          target="_blank"
-          rel="noreferrer"
-          >
+          <a href="https://graphql.org/learn/" target="_blank" rel="noreferrer">
             <img
               src={graphql}
               alt="graphql"

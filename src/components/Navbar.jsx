@@ -12,11 +12,14 @@ const Navbar = () => {
 
   return (
 
-    <nav className="z-40 w-full fixed top-0 left-0 right-0 bg-deep-blue">
-      <div className="md:flex items-center justify-between bg-deep-blue py-2 md:px-10 px-7 ">
-        <div className="font-playfair text-5xl font-bold">
+    <nav className="z-40 w-full fixed top-0 left-0 right-0">
+      <div className="flex items-center justify-between bg-eggplant md:bg-eggplant/75 md:backdrop-blur-sm py-4 md:px-10 px-7">
+        <div className="text-5xl -ml-4 font-playfair font-bold">
           <Link to="home">
-          <h2>SH</h2>
+          <div className="inline-flex">
+          <h2 className="-mr-1 text-dark-cranberry">SH</h2>
+          <h2 className="-ml-14 text-autumn-gold">SH</h2>
+          </div>
           </Link>
         </div>
         <div
@@ -26,8 +29,8 @@ const Navbar = () => {
           <i className={isMenuToggled ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
         </div>
         <ul
-          className={`md:flex md:items-center gap-14
-           absolute md:static bg-deep-blue md:z-auto z-[-1] 
+          className={`md:flex md:items-center gap-16 md:pb-0
+           absolute md:static bg-eggplant md:bg-transparent md:z-auto z-[-1]
           left-0 w-full md:w-auto pl-9 transition-all 
           duration-500 ease-in ${isMenuToggled ? "top-16" : "top-[-400px]"}`}
         >
@@ -35,7 +38,7 @@ const Navbar = () => {
             <li
               key={link.name} 
               className="md:ml-10 font-worksans font-semibold text-xl md:my-0 my-5
-              hover:text-lavender transition duration-500"
+              hover:text-autumn-gold transition duration-500"
             >
               <NavLink
               onClick={() => setIsMenuToggled(!isMenuToggled)}

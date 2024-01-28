@@ -16,9 +16,9 @@ import {
 function App() {
   return (
     <Router>
-      <div className="app bg-deep-blue">
+      <div className="app">
         <Navbar />
-        <div className="w-3/4 mx-auto md:h-full">
+        <div className="w-11/12 md:w-5/6 mx-auto pt-24 md:h-full font-rubik">
           <Routes>
             <Route path="/" element={[<Home />, <Skills />]} />
             <Route path="/projects" element={<Projects />} />

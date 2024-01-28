@@ -1,5 +1,11 @@
+/* Work Sans Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Work+Sans:wght@300;600&display=swap");
-
+/* Rubik Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+/* Sedgwick Ave Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+ 
+/* Tailwind CSS Import */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +15,6 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #010026;
+  background-color: #3b2a45;
   @apply text-white;
 }
