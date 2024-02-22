@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import profile from "../assets/images/Profile.JPG";
+import { contactLinks } from "../assets/Contactlinks";
+
 
 const Home = () => {
 
   return (
     <section
       id="home"
-      className="md:flex md:justify-around md:items-center md:h-full py-5 px-3 align-bottom bg-antique-violet/75 box-shadow-lg rounded-lg"
+      className="md:flex md:justify-around md:items-center md:h-full my-4 py-5 px-3 align-bottom"
     >
       {/* Image Section */}
       <div className="basis-2/5 z-10 mx-2 flex justify-center md:order-2">
@@ -17,8 +19,8 @@ const Home = () => {
             src={profile}
           />
       </div>
-      {/* Main Section */}
-      <div className="z-30 basis-2/5 md:mx-10 mt-8 md:mt-30 text-center">
+      {/* Intro & About Me Section */}
+      <div className="z-30 basis-2/5 xs:mx-10 md:mx-0 mt-8 md:mt-30 text-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -51,28 +53,25 @@ const Home = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="flex justify-center my-2 gap-7 text-5xl md:text-6xl">
-            <a
-              className="hover:opacity-50 hover:scale-110 transition duration-500"
-              href="https://github.com/Shernandez927"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              className="hover:opacity-50 hover:scale-110 transition duration-500"
-              href="https://www.linkedin.com/in/shelby-hernandez-801252220/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <Link className="hover:opacity-50 hover:scale-110 transition duration-500"
-            to="contact"
-            >
-              <i class="fa-solid fa-paper-plane"></i>
-            </Link>
+          <div className="flex justify-center my-2 gap-2">
+            {contactLinks.map((link) => (
+              <div className="scale-100 p-4 m-1 bg-mauve/40 rounded-full md:hover:duration-700 md:hover:ease-in-out md:hover:cursor-pointer md:hover:scale-110">
+              <a
+                key={link.name}
+                href={link.link}
+                target="_blank"
+                rel="noreferrer"
+                
+              >
+                <img
+                className="w-14"
+                src={link.img} 
+                alt={link.alt} />
+              </a>
+              </div>
+            ))} 
+    
+            
           </div>
         </motion.div>
       </div>

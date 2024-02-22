@@ -16,8 +16,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-48">
-        <h2 className="font-worksans text-center text-rose font-semibold text-4xl">Let's Talk</h2>
+    <section id="contact" className="py-16 text-center">
+        <h2 className="font-semibold text-autumn-gold text-shadow text-4xl p-2">
+          Contact Me
+        </h2>
+        <p className="text-xl">
+          Have a question, want to collaborate, or just want to say hi? Shoot me a message!
+        </p>
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -33,8 +38,9 @@ const Contact = () => {
             <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e5982065df2fd16e660c4557f728e552"
             method="POST"
+            action="https://formsubmit.co/e5982065df2fd16e660c4557f728e552"
+            
             >
             <input
             className="w-full font-semibold p-3 m-2"
@@ -57,6 +63,7 @@ const Contact = () => {
             placeholder="Email"
              {...register("email", {
                 required: true,
+                // Email regex pattern
                 // eslint-disable-next-line
                 pattern: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
              })}
@@ -84,9 +91,9 @@ const Contact = () => {
                     {errors.message.type === "maxLength" && "Max length is 2000 characters"}
                 </p>
             )}
-            <button className="rounded-sm bg-gradient-purple mt-4 py-3 px-7 text-lg font-semibold text-deep-blue hover:text-white transition duration-500">
-                Send me a Message
-            
+            <button className="rounded-lg bg-autumn-gold mt-3 py-3 px-6 xs:text-xs md:text-lg font-semibold hover:scale-105 transition duration-300 shadow-solid-primary">
+                Send Message
+                <i className="fa-solid fa-reply ml-2"></i>            
             </button>
             </form>
         </div>

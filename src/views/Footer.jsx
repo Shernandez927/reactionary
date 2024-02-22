@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="justify-center text-center mt-10">
+    <footer className="justify-center text-center mt-10 pb-8">
       <p className="text-xl">
         © 2022 Made with
         <span className="text-red-500"> ❤ </span> by Shelby Hernandez
@@ -8,7 +8,7 @@ const Footer = () => {
 
       <div className="md:flex justify-center text-center text-2xl my-2">
       <a
-        className="hover:opacity-50 hover:scale-110 transition duration-500 p-2"
+        className="md:hover:opacity-75 md:hover:scale-110 transition duration-500 p-2"
         href="https://github.com/Shernandez927"
         target="_blank"
         rel="noreferrer"
@@ -16,7 +16,7 @@ const Footer = () => {
         <i className="fa-brands fa-github"></i>
       </a>
       <a
-        className="hover:opacity-50 hover:scale-110 transition duration-500 p-2"
+        className="hover:opacity-75 hover:scale-110 transition duration-500 p-2"
         href="https://www.linkedin.com/in/shelby-hernandez-801252220/"
         target="_blank"
         rel="noreferrer"

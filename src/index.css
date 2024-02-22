@@ -18,3 +18,16 @@ body,
   background-color: #3b2a45;
   @apply text-white;
 }
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.shadow-solid-primary {
+  box-shadow: -6px 6px #ab2955;
+}
+
+.text-shadow {
+  text-shadow: -5px 2px #ab2955;
+}

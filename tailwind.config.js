@@ -10,9 +10,6 @@ module.exports = {
         "dusty-rose": "#be95c4",
         rose: "#e0b1cb",
         gray: "#ededed",
-        // "deep-blue": "#010026",
-        "dark-gray": "#757575",
-        "overlay-black": "rgba(0,0,0,0.50)",
         eggplant: "#3b2a45",
         "antique-violet": "#583948",
         "dark-cranberry": "#ab2955",
@@ -28,14 +25,10 @@ module.exports = {
         worksans: ["Work Sans", "sans-serif"],
         playfair: ["Playfair Display", "serif"],
         rubik: ["Rubik", "sans-serif"],
-        sedgwick: ["Sedgwick Ave Display", "cursive"],
       },
-      content: {},
-    },
-    screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
+      screens: {
+        xs: "320px",
+      }
     },
   },
   plugins: [],

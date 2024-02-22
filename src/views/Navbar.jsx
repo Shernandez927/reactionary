@@ -11,38 +11,38 @@ const Navbar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
 
   return (
-
     <nav className="z-40 w-full fixed top-0 left-0 right-0">
-      <div className="flex items-center justify-between bg-eggplant md:bg-eggplant/75 md:backdrop-blur-sm py-4 md:px-10 px-7">
-        <div className="text-5xl -ml-4 font-playfair font-bold">
+      <div className="flex items-center justify-between bg-eggplant md:bg-eggplant/80 md:backdrop-blur-sm py-4 md:px-10 px-7">
+        <div className="text-5xl font-playfair font-extrabold">
           <Link to="home">
-          <div className="inline-flex">
-          <h2 className="-mr-1 text-dark-cranberry">SH</h2>
-          <h2 className="-ml-14 text-autumn-gold">SH</h2>
-          </div>
+            <h2 className=" text-autumn-gold text-shadow">SH</h2>
           </Link>
         </div>
         <div
           onClick={() => setIsMenuToggled(!isMenuToggled)}
           className="absolute right-8 top-6 cursor-pointer md:hidden text-4xl"
         >
-          <i className={isMenuToggled ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+          <i
+            className={isMenuToggled ? "fa-solid fa-xmark" : "fa-solid fa-bars"}
+          ></i>
         </div>
         <ul
           className={`md:flex md:items-center gap-16 md:pb-0
            absolute md:static bg-eggplant md:bg-transparent md:z-auto z-[-1]
           left-0 w-full md:w-auto pl-9 transition-all 
-          duration-500 ease-in ${isMenuToggled ? "top-16" : "top-[-400px]"}`}
+          duration-700 ease-in ${isMenuToggled ? "top-16" : "top-[-400px]"}`}
         >
           {Links.map((link) => (
             <li
-              key={link.name} 
+              key={link.name}
               className="md:ml-10 font-worksans font-semibold text-xl md:my-0 my-5
-              hover:text-autumn-gold transition duration-500"
+                hover:text-autumn-gold transition duration-500"
             >
               <NavLink
-              onClick={() => setIsMenuToggled(!isMenuToggled)}
-              to={link.link}>
+                onClick={() => setIsMenuToggled(!isMenuToggled)}
+                to={link.link}
+                key={link.name}
+              >
                 {link.name}
               </NavLink>
             </li>
@@ -50,7 +50,6 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
-
   );
 };
 

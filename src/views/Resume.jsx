@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import pdf from "../assets/documents/resume.png";
-import resumeDoc from "../assets/documents/ResumeDoc.pdf"
+import pdf from "../assets/documents/ResumeScreenShot.png";
+import resumeDoc from "../assets/documents/ResumePDF.pdf"
 
 const Resume = () => {
 
 
   return (
-    <section id="resume" className="mt-20 pb-10">
-      <h2 className="font-worksans text-center text-rose font-semibold text-4xl p-4">
+    <section id="resume" className="my-4 p-8 flex-items-center text-center">
+      <h2 className=" text-autumn-gold font-semibold xs:text-4xl sm:text-5xl text-shadow">
         Resume
       </h2>
       <motion.div
@@ -20,22 +20,21 @@ const Resume = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-       <div className="justify-items-center gap-8 text-center">
+
         {/* Resume IMG Preview */}
         <img
-        className="p-4 justify-items-center flex-initial"
+        className="xs:scale-110 sm:scale-100 w-full xs:max-w-[375px] md:max-w-[600px] mx-auto my-10"
         src={pdf} 
         alt="resume">
         </img>
 
         {/* Download Resume Button */}
             <a href={resumeDoc} rel="noreferrer" target="_blank">
-            <button className="rounded-sm bg-gradient-purple mt-4 py-3 px-7 text-lg font-semibold text-deep-blue hover:text-white transition duration-500">
+            <button className="rounded-lg bg-autumn-gold text-slate-900 mt-3 sm:mt-0 p-3 xs:text-xs md:text-lg font-semibold hover:scale-105 transition duration-300 shadow-solid-primary">
                 Download CV
-                <ion-icon name="download"></ion-icon>
+                <i className="fa-solid fa-circle-down ml-1"></i>
             </button>
             </a>
-        </div>
       </motion.div>
     </section>
   );
