@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import pdf from "../assets/documents/ResumeScreenShot.png";
+import pdf from "../assets/documents/ResumeScreenshot.png";
 import resumeDoc from "../assets/documents/ResumePDF.pdf"
 
 const Resume = () => {
