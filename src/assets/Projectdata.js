@@ -9,25 +9,25 @@ import emendation from "./images/emendation.png";
 // Object array for Projects.js
 export const ProjectInfo = [
     { name: "Event-Easy",
-      description: "Event and Lodging Search Engine",
+      description: "Event/Lodging Search Engine using TailwindCSS & Rest API's",
       image: eventeasyscreenshot,
       link: "https://shernandez927.github.io/Projectory/",
       repo: "https://github.com/Shernandez927/Projectory"
     },
     { name: "Gypsy",
-      description: "Online PushPin Map",
+      description: "Online PushPin Map using Leaflet.js and MySQL Database",
       image: gypsy,
       link: "https://project-gypsy-63a683d8f4f7.herokuapp.com",
       repo: "https://github.com/Shernandez927/Projection"
     },
     { name: "deadCoder",
-      description: "Vintage Game Application",
+      description: "Full Stack gaming application built with the MERN stack",
       image: deadCoder,
       link: "https://deadcoder-db1047388a9e.herokuapp.com ",
       repo: "https://github.com/Shernandez927/deadCoder_"
     },
     { name: "Rain-Man",
-      description: "OpenWeather API Weather Dashboard",
+      description: "OpenWeather API Weather Dashboard styled by Bootstrap",
       image: rainMan,
       link: "https://shernandez927.github.io/rain-man/",
       repo: "https://github.com/Shernandez927/rain-man"

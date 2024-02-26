@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section id="skills" className="pt-5 pb-10 justify-items-center text-center">
       <h2 className="text-autumn-gold p-2 font-semibold xs:text-3xl sm:text-5xl text-shadow">Technical Skills</h2>
-        <div className="w-full mx-auto mt-8 justify-items-center grid xs:grid-cols-3 md:grid-cols-8 gap-0">
+        <div className="w-full mx-auto mt-2 justify-items-center grid xs:grid-cols-3 md:grid-cols-8 gap-0">
           {Skillsdata.map((skill) => (
             <motion.div
             key={skill.name}
@@ -25,10 +25,11 @@ const Skills = () => {
                   rel="noreferrer"
                 >
                 <img
-                className="w-16"
+                className="w-12"
                 src={skill.img}
                 alt={skill.alt}
-                />
+                >
+                </img>
                 </a>
               </div>
               <p className="text-md">{skill.name}</p>

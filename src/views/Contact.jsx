@@ -33,34 +33,36 @@ const Contact = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="flex md:justify-center my-5 p-2 text-black">
+        <div className="w-3/4 mx-auto max-justify-center my-5 p-2 text-black">
             {/* Contact Form with error validation using react-hook-form */}
             <form
             target="_blank"
             onSubmit={onSubmit}
             method="POST"
-            action="https://formsubmit.co/e5982065df2fd16e660c4557f728e552"
+            action="https://formsubmit.io/send/shernandez3927@gmail.com"
             
             >
             <input
-            className="w-full font-semibold p-3 m-2"
+            className="w-full font-medium p-2 m-2"
             type="text"
             placeholder="Name"
+            autoComplete="given-name"
              {...register("name", {
                 required: true,
-                maxLength: 100,
+                maxLength: 40,
              })}
             />
             {errors.name && (
-                <p className="text-red-500 mt-1">
+                <p role="alert" className="text-red-500">
                     {errors.name.type === "required" && "This field is required"}
                     {errors.name.type === "maxLength" && "Max length is 100 characters"}
                 </p>
             )}
             <input
-            className="w-full font-semibold p-3 m-2"
+            className="w-full font-medium p-2 m-2"
             type="text"
             placeholder="Email"
+            autoComplete="email"
              {...register("email", {
                 required: true,
                 // Email regex pattern
@@ -69,13 +71,13 @@ const Contact = () => {
              })}
             />
             {errors.email && (
-                <p className="text-red-500 mt-1">
+                <p role="alert" className="text-red-500">
                     {errors.email.type === "required" && "This field is required"}
                     {errors.email.type === "pattern" && "Invalid email address"}
                 </p>
             )}
             <textarea
-            className="w-full font-semibold p-3 m-2"
+            className="w-full font-medium p-2 m-2"
             type="text"
             rows="5"
             cols="50"
@@ -86,14 +88,13 @@ const Contact = () => {
              })}
             />
             {errors.message && (
-                <p className="text-red-500 mt-1">
+                <p role="alert" className="text-red-500">
                     {errors.message.type === "required" && "This field is required"}
                     {errors.message.type === "maxLength" && "Max length is 2000 characters"}
                 </p>
             )}
             <button className="rounded-lg bg-autumn-gold mt-3 py-3 px-6 xs:text-xs md:text-lg font-semibold hover:scale-105 transition duration-300 shadow-solid-primary">
                 Send Message
-                <i className="fa-solid fa-reply ml-2"></i>            
             </button>
             </form>
         </div>

@@ -1,26 +1,26 @@
 // Object array for Skills.jsx
 export const Skillsdata = [
     {
-        name: "HTML",
-        img: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/html5/html5-original.svg",
+        name: "HTML 5",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
         alt: "html",
         link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
-        name: "CSS",
-        img: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/css3/css3-original.svg",
+        name: "CSS 3",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
         alt: "css",
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
         name: "JavaScript",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
         alt: "javascript",
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
         name: "Node.js",
-        img: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nodejs/nodejs-original-wordmark.svg",
+        img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
         alt: "nodejs",
         link: "https://nodejs.org/en/docs/"
     },
@@ -38,19 +38,19 @@ export const Skillsdata = [
     },
     {
         name: "MySQL",
-        img: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/mysql/mysql-original.svg",
+        img: "https://www.svgrepo.com/show/373309/mysql.svg",
         alt: "mysql",
         link: "https://dev.mysql.com/doc/"
     },
     {
         name: "React",
-        img: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/react/react-original.svg",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
         alt: "reactjs",
         link: "https://react.dev/learn"
     },
     {
         name: "Git",
-        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
         alt: "git",
         link: "https://git-scm.com/doc"
     },
@@ -74,7 +74,7 @@ export const Skillsdata = [
     },
     {
         name: "Heroku",
-        img: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/heroku/heroku-original.svg",
+        img: "https://www.svgrepo.com/show/303683/heroku-logo.svg",
         alt: "heroku",
         link: "https://devcenter.heroku.com/start"
     },
@@ -95,5 +95,5 @@ export const Skillsdata = [
         img: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/express/express-original.svg",
         alt: "express.js",
         link: "https://expressjs.com/en/starter/installing.html"
-    }
+    },
 ];

@@ -23,28 +23,16 @@ const Projects = () => {
                   }}
                 >
             <div className="relative p-4 bg-antique-violet rounded-lg shadow-xl" >
-            <img className="shadow-md" src={project.image} alt={project.name} />
-            <div className="p-6">
-                <h5 className="text-2xl font-semibold">{project.name}</h5>
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noreferrer"
+            >
+            <img className="shadow-md md:hover:cursor-pointer" src={project.image} alt={project.name} />
+            </a>
+            <div className="my-2">
+                <h5 className="text-2xl font-semibold mx-2">{project.name}</h5>
               <p>{project.description}</p>
-              <div className="justify-items-center px-2 mt-3">
-              <a
-               href={project.repo}
-               className=" text-4xl hover:text-gray transition duration-500"
-               target="_blank"
-               rel="noreferrer"
-              >
-              <i className="scale-90 fa-brands fa-square-github px-2"></i>
-              </a>
-              <a
-               href={project.link}
-               className="text-4xl hover:text-gray transition duration-500"
-               target="_blank"
-               rel="noreferrer"
-              >
-              <i className="scale-90 fa-regular fa-window-restore px-2"></i>
-              </a>
-              </div>
             </div>
           </div>
           </motion.div>

@@ -32,7 +32,6 @@ const Resume = () => {
             <a href={resumeDoc} rel="noreferrer" target="_blank">
             <button className="rounded-lg bg-autumn-gold text-slate-900 mt-3 sm:mt-0 p-3 xs:text-xs md:text-lg font-semibold hover:scale-105 transition duration-300 shadow-solid-primary">
                 Download CV
-                <i className="fa-solid fa-circle-down ml-1"></i>
             </button>
             </a>
       </motion.div>

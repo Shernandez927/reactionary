@@ -6,7 +6,7 @@ const Footer = () => {
         <span className="text-red-500"> ❤ </span> by Shelby Hernandez
       </p>
 
-      <div className="md:flex justify-center text-center text-2xl my-2">
+      <div className="md:flex justify-center text-center text-xl mb-2">
       <a
         className="md:hover:opacity-75 md:hover:scale-110 transition duration-500 p-2"
         href="https://github.com/Shernandez927"
