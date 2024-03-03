@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import pdf from "../assets/documents/ResumeScreenshot.png";
+import pdf from "../../src/assets/documents/resumess.png";
 import resumeDoc from "../assets/documents/ResumePDF.pdf"
 
 
